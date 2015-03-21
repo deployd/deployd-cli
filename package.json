@@ -1,0 +1,27 @@
+{
+  "name": "deployd-cli",
+  "version": "0.8.0",
+  "license": "Apache-2.0",
+  "description": "The deployd command line interface",
+  "repository": {
+    "url": "git://github.com/deployd/deployd-cli.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "commander": "^2.2.0",
+    "semver": "^4.1.0",
+    "shelljs": "^0.3.0",
+    "step": "^0.0.5",
+    "resolve": "^1.1.0",
+    "opener": "^1.4.0",
+    "debug": "^2.1.0",
+    "request": "2.51.0",
+    "doh": "^0.0.4"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "dpd": "./bin/dpd"
+  }
+}
