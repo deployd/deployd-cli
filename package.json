@@ -1,6 +1,6 @@
 {
   "name": "deployd-cli",
-  "version": "0.8.0",
+  "version": "0.8.9",
   "license": "Apache-2.0",
   "description": "The deployd command line interface",
   "repository": {
