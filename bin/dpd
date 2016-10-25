@@ -39,7 +39,7 @@ program
   .option('-P, --mongoPort [mongoPort]', 'mongodb port to connect to')
   .option('-n, --dbname [dbname]', 'name of the mongo database')
   .option('-a, --auth', 'prompts for mongo server credentials')
-  .option('    --deploydPath [deploydPath]', 'allow overriding the path to deployd')
+  .option('    --deploydPath [deploydPath]', 'allow overriding the path to deployd main script')
   ;
 
 /**
@@ -322,7 +322,7 @@ function checkForUpdates() {
 function createServer(config) {
   var deploydpath;
   try {
-    deploydpath = resolve('deployd', {basedir: program.deploydPath || process.cwd()});
+    deploydpath = program.deploydPath || resolve('deployd', {basedir: process.cwd()});
   } catch (e) {
     console.log('Unable to find local deployd');
     process.exit(99);
