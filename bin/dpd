@@ -108,13 +108,13 @@ function start(file) {
     process.chdir(path.dirname(file));
   }
   if (test('-f', 'app.dpd')) {
-    console.log("starting deployd v" + packageInfo.version + "...");
+    console.log("deployd CLI version " + packageInfo.version);
+    console.log("starting deployd");
 
     if (fs.existsSync(latestversionFile)) {
       var latest = fs.readFileSync(latestversionFile, 'utf-8');
-      var canUpdate = which('dpd-update');
       if (latest && semver.gt(latest, packageInfo.version)) {
-        console.log("deployd v" + latest + " is available." + (canUpdate ? " Update with dpd-update": ""));
+        console.log("deployd CLI v" + latest + " is available.");
         console.log();
       }
     }
@@ -304,7 +304,7 @@ function generatePort() {
 }
 
 function checkForUpdates() {
-  request('http://registry.npmjs.org/deployd', function(err, res, body) {
+  request('http://registry.npmjs.org/deployd-cli', function(err, res, body) {
     if (!err) {
       var json;
       try {
