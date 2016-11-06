@@ -3,6 +3,6 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "deployd": "^0.8.0"
+    "deployd": "^1.0.0"
   }
 }
