@@ -22,5 +22,11 @@
   "preferGlobal": true,
   "bin": {
     "dpd": "./bin/dpd"
+  },
+  "scripts": {
+    "test": "jasmine JASMINE_CONFIG_PATH=tests/jasmine.json"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2"
   }
 }
