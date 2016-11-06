@@ -17,7 +17,6 @@
     "resolve": "^1.1.0",
     "opener": "^1.4.0",
     "debug": "^2.1.0",
-    "request": "2.51.0",
     "doh": "^0.0.4"
   },
   "preferGlobal": true,
