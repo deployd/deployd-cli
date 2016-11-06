@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/nicolas/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/nicolas/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/nicolas/development/deployd_workspace/deployd-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/nicolas/.npm/deployd-cli/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/nicolas/.npm correctMkdir not in flight; initializing
+10 info lifecycle deployd-cli@0.0.1~prepublish: deployd-cli@0.0.1
+11 silly lifecycle deployd-cli@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/nicolas/.npm/deployd-cli/0.0.1/package.tgz',
+12 verbose tar pack   '/Users/nicolas/development/deployd_workspace/deployd-cli' ]
+13 verbose tarball /Users/nicolas/.npm/deployd-cli/0.0.1/package.tgz
+14 verbose folder /Users/nicolas/development/deployd_workspace/deployd-cli
+15 verbose addLocalTarball adding from inside cache /Users/nicolas/.npm/deployd-cli/0.0.1/package.tgz
+16 verbose correctMkdir /Users/nicolas/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd deployd-cli@0.0.1
+18 verbose afterAdd /Users/nicolas/.npm/deployd-cli/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/nicolas/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/nicolas/.npm/deployd-cli/0.0.1/package/package.json written
+21 silly publish { name: 'deployd-cli',
+21 silly publish   version: '0.0.1',
+21 silly publish   license: 'MIT',
+21 silly publish   description: 'The deployd command line interface',
+21 silly publish   repository: { url: 'git://github.com/deployd/deployd-cli.git' },
+21 silly publish   engines: { node: '>= 0.10.0' },
+21 silly publish   dependencies:
+21 silly publish    { commander: '^2.2.0',
+21 silly publish      semver: '^4.1.0',
+21 silly publish      shelljs: '^0.3.0',
+21 silly publish      step: '^0.0.5',
+21 silly publish      resolve: '^1.1.0',
+21 silly publish      opener: '^1.4.0',
+21 silly publish      debug: '^2.1.0',
+21 silly publish      request: '2.51.0',
+21 silly publish      doh: '^0.0.4' },
+21 silly publish   preferGlobal: true,
+21 silly publish   bin: { dpd: './bin/dpd' },
+21 silly publish   readme: '# deployd-cli\n\n[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deployd/deployd)\n[![Current Version](https://img.shields.io/npm/v/dpd-cli.svg?style=flat-square)](https://www.npmjs.org/package/dpd-cli)\n[![Build Status](https://img.shields.io/travis/deployd/deployd-cli.svg?style=flat-square)](http://travis-ci.org/deployd/deployd-cli)\n\n> The [Deployd](http://www.deployd.com) Command Line Interface\n\n:warning: This CLI is very much a work in progress. Use it at your own risk. The nodule name might change.\n\n## Installation\n\n`npm install dpd-cli -g`\n\n## Prerequisites\n\nThe CLI requires [Node 4](https://nodejs.org/en/download/) or higher.  \nDeployd requires a running MongoDB to start sucessfully. Check the [Deployd Requirements](https://github.com/deployd/deployd#requirements)\n\n## Getting started\n\n```bash\n$ dpd create hello\n$ cd hello\n$ dpd -d\n```\n\n## License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'bad867fa9d0af6e59bb1d04d8035648a9078bd07',
+21 silly publish   bugs: { url: 'https://github.com/deployd/deployd-cli/issues' },
+21 silly publish   homepage: 'https://github.com/deployd/deployd-cli#readme',
+21 silly publish   _id: 'deployd-cli@0.0.1',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '3a29d57695f48fd3e63421830f48af9d9f149da3',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name deployd-cli
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'deployd-cli',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'deployd-cli',
+26 silly mapToRegistry   name: 'deployd-cli',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/deployd-cli
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/nicolas/.npm/deployd-cli/0.0.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/deployd-cli
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 16:58:02
+33 verbose request using bearer token for auth
+34 verbose request id 1bf3c0a71411ef1b
+35 http request PUT https://registry.npmjs.org/deployd-cli
+36 http 403 https://registry.npmjs.org/deployd-cli
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '105',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 06 Nov 2016 15:58:03 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-fra1251-FRA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1478447882.353720,VS0,VE778',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/nicolas/.npm/registry.npmjs.org/deployd-cli on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "deployd-cli". Are you logged in as the correct user? : deployd-cli
+40 verbose stack     at makeError (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/nicolas/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid deployd-cli
+43 verbose cwd /Users/nicolas/development/deployd_workspace/deployd-cli
+44 error Darwin 16.1.0
+45 error argv "/Users/nicolas/.nvm/versions/node/v6.9.1/bin/node" "/Users/nicolas/.nvm/versions/node/v6.9.1/bin/npm" "publish" "./"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error you do not have permission to publish "deployd-cli". Are you logged in as the correct user? : deployd-cli
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
