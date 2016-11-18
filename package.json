@@ -24,9 +24,10 @@
     "dpd": "./bin/dpd"
   },
   "scripts": {
-    "test": "jasmine JASMINE_CONFIG_PATH=tests/jasmine.json"
+    "test": "jasmine JASMINE_CONFIG_PATH=tests/jasmine.js"
   },
   "devDependencies": {
-    "jasmine": "^2.5.2"
+    "jasmine": "^2.5.2",
+    "jasmine-spec-reporter": "^2.7.0"
   }
 }
