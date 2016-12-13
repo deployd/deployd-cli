@@ -1,13 +1,13 @@
 {
-  "name": "dpd-cli",
-  "version": "0.0.2",
+  "name": "deployd-cli",
+  "version": "2.0.0",
   "license": "MIT",
   "description": "The deployd command line interface",
   "repository": {
     "url": "git://github.com/deployd/deployd-cli.git"
   },
   "engines": {
-    "node": ">= 0.12.0"
+    "node": ">= 4"
   },
   "dependencies": {
     "commander": "^2.2.0",
