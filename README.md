@@ -22,6 +22,13 @@ Deployd requires a running MongoDB to start sucessfully. Check the [Deployd Requ
 ```bash
 $ dpd create hello
 $ cd hello
+$ dpd
+```
+
+## Using the dashboard
+
+```bash
+$ npm i dpd-dashboard dpd-clientlib --save
 $ dpd -d
 ```
 
