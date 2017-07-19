@@ -1,20 +1,20 @@
 module.exports = {
-    "extends": [
-        "airbnb-base"
-    ],
-    "env": {
-        "shelljs": true,
-        "node": true
-    },
-    "rules": {
-        "import/no-unresolved": 1,
-        "prefer-const": 1,
-        "no-unused-vars": 1,
-        "no-use-before-define": 1,
-        "one-var": 1,
-        "consistent-return": 1,
-        "no-param-reassign": 1,
-        "global-require": 1,
-        "import/no-dynamic-require": 1
-    }
-}
+  "extends": [
+    "airbnb-base"
+  ],
+  "env": {
+    "shelljs": true,
+    "node": true
+  },
+  "rules": {
+    // TODO: change these rules to errors and fix codebase
+    "prefer-const": 1, // 4 errors
+    "no-unused-vars": 1, // 3 errors
+    "no-use-before-define": 1, // 7 errors
+    "one-var": 1, // 8 errors
+    "consistent-return": 1, // 8 errors
+    "no-param-reassign": 1, // 2 errors
+    "global-require": 1, // 2 errors
+    "import/no-dynamic-require": 1 // 1 error
+  }
+}  
