@@ -3,6 +3,8 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deployd/deployd)
 [![Current Version](https://img.shields.io/npm/v/deployd-cli.svg?style=flat-square)](https://www.npmjs.org/package/deployd-cli)
 [![Build Status](https://img.shields.io/travis/deployd/deployd-cli.svg?style=flat-square)](http://travis-ci.org/deployd/deployd-cli)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
 
 > The [Deployd](http://www.deployd.com) Command Line Interface
 
