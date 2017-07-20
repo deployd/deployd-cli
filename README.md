@@ -1,6 +1,10 @@
 
 <h1 align="center">
-  deployd-cli
+  <br>
+  <a href="http://deployd.com"><img src="http://deployd.com/img/footer-logo.png" alt="Deployd" width="200"></a>
+  <br>
+  Deployd CLI
+  <br>
 </h1>
 
 <h4 align="center">A Command Line Interface to create, update and start applications based on on <a href="http://deployd.com" target="_blank">Deployd</a>.</h4>
