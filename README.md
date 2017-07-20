@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://deployd.com"><img src="http://deployd.com/img/footer-logo.png" alt="Deployd" width="200"></a>
+  <a href="http://deployd.com"><img src="http://deployd.com/img/footer-logo.png" alt="Deployd"></a>
   <br>
   Deployd CLI
   <br>
