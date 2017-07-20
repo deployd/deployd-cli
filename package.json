@@ -6,21 +6,36 @@
   "repository": {
     "url": "git://github.com/deployd/deployd-cli.git"
   },
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "npm run lint",
+    "lint": "eslint . --config .eslintrc.js --quiet --fix"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --config .eslintrc.js --quiet --fix", "git add"]
+  },
   "engines": {
     "node": ">= 4"
   },
   "dependencies": {
     "commander": "^2.2.0",
+    "debug": "^2.1.0",
+    "doh": "^0.0.4",
+    "opener": "^1.4.0",
+    "resolve": "^1.1.0",
     "semver": "^4.1.0",
     "shelljs": "^0.3.0",
-    "step": "^0.0.5",
-    "resolve": "^1.1.0",
-    "opener": "^1.4.0",
-    "debug": "^2.1.0",
-    "doh": "^0.0.4"
+    "step": "^0.0.5"
   },
   "preferGlobal": true,
   "bin": {
     "dpd": "./bin/dpd"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2"
   }
 }
