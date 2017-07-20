@@ -1,3 +1,4 @@
 /node_modules
 .latestversion
 npm-debug.log
+/testAppDoNotKeep

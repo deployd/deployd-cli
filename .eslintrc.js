@@ -4,6 +4,7 @@ module.exports = {
   ],
   "env": {
     "shelljs": true,
+    "jest": true,
     "node": true
   },
   "rules": {
