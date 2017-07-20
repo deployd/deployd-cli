@@ -16,6 +16,7 @@ module.exports = {
     "consistent-return": 1, // 8 errors
     "no-param-reassign": 1, // 2 errors
     "global-require": 1, // 2 errors
-    "import/no-dynamic-require": 1 // 1 error
+    "import/no-dynamic-require": 1, // 1 error
+    "comma-dangle": ["error", "never"]
   }
 }  

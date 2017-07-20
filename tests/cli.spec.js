@@ -6,8 +6,7 @@ const del = require('del');
 
 describe('test CLI', () => {
   beforeEach((done) => {
-    del(['testAppDoNotKeep']);
-    done();
+    del(['testAppDoNotKeep']).then(done).catch(done);
   });
 
   it('should create a project', (done) => {
@@ -23,7 +22,6 @@ describe('test CLI', () => {
 
 
   afterEach((done) => {
-    del(['testAppDoNotKeep']);
-    done();
+    del(['testAppDoNotKeep']).then(done);
   });
 });
