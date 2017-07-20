@@ -8,7 +8,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
-    "test": "npm run lint",
+    "test": "npm run lint && npm run jest",
     "lint": "eslint . --config .eslintrc.js --quiet --fix",
     "jest": "jest"
   },
