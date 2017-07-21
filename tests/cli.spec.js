@@ -13,15 +13,24 @@ describe('test CLI', () => {
   });
 
   it('should create a project', (done) => {
-    execa(path.join(__dirname, '../bin/dpd.js'), ['create', 'testAppDoNotKeep']).then((result) => {
-      console.log(result.stdout);
-      expect(result.stdout).toContain('dpd is installing the dependencies... please be patient (this may take a few minutes)');
-      done();
-    }).catch((err) => {
-      console.log('error', err);
-      done.fail(err);
-    });
+    execa(path.join(__dirname, '../bin/dpd.js'), ['create', 'testAppDoNotKeep'])
+      .then((result) => {
+        expect(result.stdout)
+          .toContain('dpd is installing the dependencies... please be patient (this may take a few minutes)');
+        done();
+      }).catch(done.fail);
   }, 20000); // Huge timeout to let npm install all deps, obviously, needs to be changed
+
+
+  it('should create a project', (done) => {
+    execa(path.join(__dirname, '../bin/dpd.js'), ['cmdDontExist'])
+      .then((result) => {
+        done.fail();
+      }).catch((err) => {
+        expect(err.stdout).toContain('This directory does not contain a Deployd app!');
+        done();
+      });
+  });
 
 
   afterEach((done) => {
