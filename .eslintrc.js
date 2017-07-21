@@ -7,6 +7,9 @@ module.exports = {
     "jest": true,
     "node": true
   },
+  "parserOptions": {
+       "sourceType": "script"
+    },
   "rules": {
     // TODO: change these rules to errors and fix codebase
     "prefer-const": 1, // 4 errors

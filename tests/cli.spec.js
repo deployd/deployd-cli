@@ -1,3 +1,4 @@
+'use strict';
 
 const path = require('path');
 const execa = require('execa');
@@ -6,7 +7,9 @@ const del = require('del');
 
 describe('test CLI', () => {
   beforeEach((done) => {
-    del(['testAppDoNotKeep']).then(done).catch(done);
+    del(['testAppDoNotKeep'])
+      .then(done)
+      .catch(done);
   });
 
   it('should create a project', (done) => {
@@ -18,10 +21,12 @@ describe('test CLI', () => {
       console.log('error', err);
       done.fail(err);
     });
-  });
+  }, 20000); // Huge timeout to let npm install all deps, obviously, needs to be changed
 
 
   afterEach((done) => {
-    del(['testAppDoNotKeep']).then(done);
+    del(['testAppDoNotKeep'])
+      .then(done)
+      .catch(done);
   });
 });
