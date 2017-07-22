@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
+'use strict';
+
 /**
  * External dependencies
  */
-
-var cli = require('../lib/cli');
-
+const cli = require('../lib/cli');
 
 cli.program
   .version(require('../package').version)
@@ -18,13 +18,12 @@ cli.program
   .option('-H, --host [host]', 'specify host for mongo server')
   .option('-P, --mongoPort [mongoPort]', 'mongodb port to connect to')
   .option('-n, --dbname [dbname]', 'name of the mongo database')
-  .option('-a, --auth <auth>', ' usesrname:password mongo server credentials') 
+  .option('-a, --auth <auth>', ' usesrname:password mongo server credentials')
   .option('-u, --username <username>', 'The user to authenticate as')
-  .option('-s, --password <password>', 'The user\'s password') 
+  .option('-s, --password <password>', 'The user\'s password')
   .option('-c, --dbconn <dbconnectionstring>', 'The MongoDB Connection String')
   .option('    --deploydPath [deploydPath]', 'allow overriding the path to deployd main script');
 
- 
 
 cli.program
   .command('create [project-name]')
@@ -58,4 +57,3 @@ cli.program
 cli.program.parse(process.argv);
 
 if (cli.program.args.length === 0) cli.start();
- 
