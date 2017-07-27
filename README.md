@@ -33,7 +33,7 @@
 
 ## Installation
 
-`npm install dpd-cli -g`
+`npm install deployd-cli -g`
 
 ## Prerequisites
 
@@ -46,13 +46,6 @@ Deployd requires a running MongoDB to start sucessfully. Check the [Deployd Requ
 $ dpd create hello
 $ cd hello
 $ dpd
-```
-
-### Using the dashboard
-
-```bash
-$ npm i dpd-dashboard dpd-clientlib --save
-$ dpd -d
 ```
 
 To start dpd with  Database authentication:
