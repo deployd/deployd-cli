@@ -11,7 +11,7 @@ We'd love to have your contribution to deployd-cli. There are several ways to co
 
 ## Code of conduct
 
-This project and everyone participating in it is governed by the [Deployd Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to contact@deployd.com.
+This project and everyone participating in it is governed by the [Deployd Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to hello@deployd.com.
 
 ## Questions or Issues?
 
