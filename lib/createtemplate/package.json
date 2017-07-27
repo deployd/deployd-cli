@@ -3,6 +3,8 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "deployd": "^1.0.0-alpha"
+    "deployd": "^1.0.0-alpha",
+    "dpd-dashboard": "^0.0.1",
+    "dpd-clientlib": "^0.0.1"
   }
 }
