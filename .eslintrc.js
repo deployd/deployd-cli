@@ -12,9 +12,7 @@ module.exports = {
     },
   "rules": {
     // TODO: change these rules to errors and fix codebase
-    "prefer-const": 1, // 4 errors
     "no-unused-vars": 1, // 3 errors
-    "no-use-before-define": 1, // 7 errors
     "consistent-return": 1, // 8 errors
     "import/no-dynamic-require": 1, // 1 error
     "comma-dangle": ["error", "never"]
