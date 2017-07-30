@@ -15,7 +15,7 @@ module.exports = {
     "prefer-const": 1, // 4 errors
     "no-unused-vars": 1, // 3 errors
     "no-use-before-define": 1, // 7 errors
-    "one-var": 1, // 8 errors
+    "one-var": 2, // 8 errors
     "consistent-return": 1, // 8 errors
     "no-param-reassign": 1, // 2 errors
     "global-require": 1, // 2 errors
