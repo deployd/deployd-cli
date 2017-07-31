@@ -25,6 +25,9 @@
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Make a PR">
   </a>
+  <a href="https://ci.appveyor.com/project/deployd/deployd-cli">
+    <img src="https://ci.appveyor.com/api/projects/status/github/deployd/deployd-cli?svg=true" alt="Appveyor Build Status">
+  </a>
 </p>
 <br>
 
