@@ -26,13 +26,10 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="Make a PR">
   </a>
   <a href="https://ci.appveyor.com/project/deployd/deployd-cli">
-    <img src="https://ci.appveyor.com/api/projects/status/github/deployd/deployd-cli?svg=true" alt="Appveyor Build Status">
-  </a>
+    <img src="https://ci.appveyor.com/api/projects/status/github/deployd/deployd-cli?svg=true" alt="Appveyor Build Status">
+  </a>
 </p>
 <br>
-
-
-:warning: This CLI is very much a work in progress. Use it at your own risk.
 
 ## Installation
 
@@ -41,7 +38,7 @@
 ## Prerequisites
 
 The CLI requires [Node 4](https://nodejs.org/en/download/) or higher.  
-Deployd requires a running MongoDB to start sucessfully. Check the [Deployd Requirements](https://github.com/deployd/deployd#requirements)
+Deployd requires MongoDB locally to start sucessfully. Check the [Deployd Requirements](https://github.com/deployd/deployd#requirements)
 
 ## Getting started
 
@@ -99,6 +96,14 @@ dpd --host "127.0.0.1" -P '27017' -n "mymongodb" -a "myusername:mypassword"
         e.g. dpd (starts server in current directory),
              dpd my-app/app.dpd (starts app from file)
 ```
+
+## Contributions
+
+Read the [CONTRIBUTING document](CONTRIBUTING.md).
+
+## Code of conduct
+
+This project and everyone participating in it is governed by the [Deployd Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to hello@deployd.com.
 
 ## License
 
