@@ -34,7 +34,7 @@ describe('Integration tests for the Deployd Command Line Interface', () => {
 
   it('should throw an error when running start in a directory which is not a deployd app', (done) => {
     execa(path.join(__dirname, '../bin/dpd.js'), ['cmdDontExist'])
-      .then((result) => {
+      .then(() => {
         done.fail();
       }).catch((err) => {
         expect(err.stdout).toContain('This directory does not contain a Deployd app!');
